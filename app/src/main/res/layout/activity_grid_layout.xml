@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg1"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".GridLayout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="8">
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navview"
+            android:layout_width="93dp"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="@color/cardview_shadow_end_color"
+            app:menu="@menu/menu_scrolling" />
+
+        <TextView
+            android:id="@+id/textGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="cursive"
+            android:text="@string/physical"
+            android:textColor="@color/black"
+            android:textSize="44sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/image1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/c"
+        android:contentDescription="@string/food" />
+
+    <ImageButton
+        android:id="@+id/image2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/wo"
+        android:contentDescription="@string/work" />
+
+    <ImageButton
+        android:id="@+id/image3"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bm"
+        android:contentDescription="@string/bmi" />
+
+</LinearLayout>

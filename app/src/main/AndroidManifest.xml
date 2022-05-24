@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.FitnessApp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/roundicon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/roundicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.example.FitnessApp.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.FitnessApp.Signin" />
+        <activity android:name="com.example.FitnessApp.Signup" />
+        <activity android:name="com.example.FitnessApp.GridLayout" />
+        <activity
+            android:name="com.example.FitnessApp.WorkoutLayout"
+            android:label="@string/title_activity_workout_layout"
+            android:theme="@style/AppTheme" />
+        <activity android:name="com.example.FitnessApp.FoodLayout" />
+        <activity android:name="com.example.FitnessApp.Workout" />
+        <activity android:name="com.example.FitnessApp.BMI" />
+        <activity android:name="com.example.FitnessApp.FullWorkout" />
+        <activity android:name="com.example.FitnessApp.CalorieCounter" />
+        <activity android:name="com.example.FitnessApp.Add" />
+        <activity android:name="com.example.FitnessApp.workout1"></activity>
+        <activity android:name="com.example.FitnessApp.workout2"></activity>
+        <activity android:name="com.example.FitnessApp.workout3"></activity>
+        <activity android:name="com.example.FitnessApp.workout4"></activity>
+        <activity android:name="com.example.FitnessApp.workout5"></activity>
+        <activity android:name="com.example.FitnessApp.workout6"></activity>
+        <activity android:name="com.example.FitnessApp.workout7"></activity>
+        <activity android:name="com.example.FitnessApp.workout8"></activity>
+        <activity android:name="com.example.FitnessApp.workout9"></activity>
+    </application>
+
+</manifest>

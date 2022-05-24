@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context=".FoodLayout">
+
+    <TextView
+        android:id="@+id/intro1"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/height1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="120dp"
+        android:gravity="center_horizontal"
+        android:text="Input your personal weight and height to determine the recommended number of calories to be taken"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/weight1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/calc1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="41dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginRight="61dp"
+        android:layout_marginBottom="235dp"
+        android:layout_toStartOf="@+id/height1"
+        android:layout_toLeftOf="@+id/height1"
+        android:ems="6"
+        android:gravity="center"
+        android:hint="@string/weight"
+        android:inputType="number|numberDecimal"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/height1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/result1"
+        android:layout_alignBaseline="@+id/weight1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginBottom="82dp"
+        android:ems="6"
+        android:gravity="center"
+        android:hint="@string/height"
+        android:inputType="number|numberDecimal"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calc1"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginBottom="102dp"
+        android:background="@drawable/roundb"
+        android:text="@string/calculate"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="39dp"
+        android:layout_marginBottom="102dp"
+        android:background="@drawable/roundb"
+        android:text="@string/next"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/res"
+        android:layout_width="328dp"
+        android:layout_height="82dp"
+        android:layout_above="@+id/calc1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="112dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
